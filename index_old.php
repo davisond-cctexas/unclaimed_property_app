@@ -139,7 +139,7 @@
   }
 ?>
 <nav aria-label="...">
-  <ul class="pagination justify-content-center">
+  <ul class="pagination">
     <li class="page-item disabled">
       <span class="page-link">Previous</span>
     </li>
