@@ -34,21 +34,21 @@
             <div class="row">
               <div class="col-md-4 mb-3">
                 <label for="firstName">First name</label>
-                <input type="text" name="firstname" class="form-control" id="firstName" placeholder="" value=""  >
+                <input type="text" name="firstname" class="form-control" id="firstName" placeholder="" value="<?=$_POST["firstname"]?>">
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="lastName">Last name</label>
-                <input type="text" name="lastname" class="form-control" id="lastName" placeholder="" value=""  >
+                <input type="text" name="lastname" class="form-control" id="lastName" placeholder="" value="<?=$_POST["lastname"]?>"  >
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="lastName">Docket Number</label>
-                <input type="text" name="docket" class="form-control" id="docket" placeholder="" value=""  >
+                <input type="text" name="docket" class="form-control" id="docket" placeholder="" value="<?=$_POST["docket"]?>"  >
                 <div class="invalid-feedback">
                   Valid Number is required.
                 </div>
