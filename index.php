@@ -72,7 +72,7 @@
             } else {
                 $pageno = 1;
             }
-            $no_of_records_per_page = 10;
+            $no_of_records_per_page = 20;
             $offset = ($pageno-1) * $no_of_records_per_page;
 
             $conn=mysqli_connect("localhost","root","velu12","unclaimed_property_db");
