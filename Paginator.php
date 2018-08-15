@@ -79,14 +79,14 @@ class Paginator
 	    $start      = ( ( $this->_page - $links ) > 0 ) ? $this->_page - $links : 1;
 	    $end        = ( ( $this->_page + $links ) < $last ) ? $this->_page + $links : $last;
 	 
-	    // $html       = '<ul class="' . $list_class . '">';
-	    $html       = '<nav><ul class="pagination justify-content-center">';
+	    $html       = '<ul class="' . $list_class . '">';
+	    // $html       = '<nav><ul class="pagination justify-content-center">';
 	 
 	    $class      = ( $this->_page == 1 ) ? "disabled" : "";
 	    $html       .= '<li class="' . $class . '"><a href="?limit=' . $this->_limit . '&page=' . ( $this->_page - 1 ) . '">&laquo;</a></li>';
 	 
 	    if ( $start > 1 ) {
-	        $html   .= '<li class="page-item"><a href="?limit=' . $this->_limit . '&page=1">1</a></li>';
+	        $html   .= '<li><a href="?limit=' . $this->_limit . '&page=1">1</a></li>';
 	        $html   .= '<li class="disabled"><span>...</span></li>';
 	    }
 	 

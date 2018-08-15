@@ -133,7 +133,7 @@
      $query = "SELECT * FROM INFO where FIRST_NAME LIKE '%".$firstname."%' or LAST_NAME LIKE '%".$lastname."%' or DOCKET LIKE '%".$docket."%'";
 
                     $Paginator  = new Paginator( $conn, $query );
-                    $results    = $Paginator->getData();
+                    $results    = $Paginator->getData($page, $limit);
                   }
 
                  ?>
@@ -159,9 +159,9 @@
 
                         </tbody>
                 </table>
-        <nav aria-label="Page navigation example">
-                   <?php echo $Paginator->createLinks( $links, 'pagination justify-content-center' ); ?> 
-               </nav>
+        <!-- <nav aria-label="Page navigation example"> -->
+                   <?php echo $Paginator->createLinks( $links, 'pagination pagination-lg justify-content-center' ); ?> 
+               <!-- </nav> -->
                 </div>
         </div>
     
